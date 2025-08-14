@@ -3,5 +3,9 @@
 PACKAGE_NAME=acer-wmi-battery
 PACKAGE_VERSION=1.0
 
+# Add dkms
 dkms add -m "${PACKAGE_NAME}" -v "${PACKAGE_VERSION}"
 dkms install -m "${PACKAGE_NAME}" -v "${PACKAGE_VERSION}"
+
+# Add auto load at boot
+echo "acer_wmi_battery" > /etc/modprobe.d/${PACKAGE_NAME}.conf
