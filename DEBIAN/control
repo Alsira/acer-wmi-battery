@@ -1,0 +1,5 @@
+Package: acer-wmi-battery
+Version: 1.0
+Maintainer: frederik-h
+Architecture: amd64
+Description: contains an experimental Linux kernel driver for the battery health control WMI interface of Acer laptops. It can be used to control two battery-related features of Acer laptops that Acer provides through the Acer Care Center on Windows: a health mode that limits the battery charge to 80% with the goal of preserving your battery's capacity and a battery calibration mode which puts your battery through a controlled charge-discharge cycle to provide more accurate battery capacity estimates. It can also be used to read the battery temperature.
